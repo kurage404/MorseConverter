@@ -1,6 +1,17 @@
-def convert(m):
-    m = m.replace('・', '0')
-    m = m.replace('－', '1')
+# code:Python3/UTF-8
+# made by kurage404
+def defult_str():
+    return("・","－","0","1")
+
+def convert(from1, from2, to1, to2, m):
+    m = m.replace(from1, to1)
+    m = m.replace(from2, to2)
     print(m)
+
+def state():
+    print("\'"+from1+"\' => \'"+to1+"\'")
+    print("\'"+from2+"\' => \'"+to2+"\'")
+from1, from2, to1, to2 = defult_str()
+state()
 m=input()
-convert(m)
+convert(from1, from2, to1, to2, m)
