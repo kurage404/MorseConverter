@@ -22,3 +22,6 @@ def get_transelate_list(lang):
     else:
         print("File Does Not Exist")
         return False
+
+def message_check(m):
+    return "".join([chr(ord(ch) - 96) if ("ァ" <= ch <= "ヴ") else ch for ch in strj])
