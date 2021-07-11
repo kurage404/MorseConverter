@@ -1,4 +1,4 @@
-# code:Python3/UTF-8
+# code:Python3/UTF-8/LF
 # made by kurage404
 import os
 
@@ -11,7 +11,7 @@ def lang_check(lang):
         return False
 
 
-def get_transelate_list(lang):
+def get_translate_list(lang):
     if(lang_check(lang)):
         sr = os.sep
         with open('..'+sr+'lang'+sr+lang, 'r',encoding="utf-8") as file:
@@ -24,4 +24,14 @@ def get_transelate_list(lang):
         return False
 
 def message_check(m):
-    return "".join([chr(ord(ch) - 96) if ("ァ" <= ch <= "ヴ") else ch for ch in strj])
+
+
+def translate_message(m):
+    tra_list = get_translate_list(lang)
+    tra_mes = ""
+    for i in m:
+        for li in tra_list:
+            if(i in li):
+                print(li)
+                tra_mes=tra_mes + li[1] + " "
+    print(tra_mes)
