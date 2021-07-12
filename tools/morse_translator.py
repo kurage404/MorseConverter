@@ -26,12 +26,11 @@ def get_translate_list(lang):
 def message_check(m):
 
 
-def translate_message(m):
-    tra_list = get_translate_list(lang)
+def translate_message(m,tra_list):
     tra_mes = ""
     for i in m:
         for li in tra_list:
             if(i in li):
                 print(li)
-                tra_mes=tra_mes + li[1] + " "
+                tra_mes = tra_mes + li[1] + " "
     print(tra_mes)
