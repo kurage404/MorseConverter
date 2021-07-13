@@ -24,13 +24,15 @@ def get_translate_list(lang):
         return False
 
 def message_check(m):
-
+    traint=1
+    return tra_int
 
 def translate_message(m,tra_list):
+    tra_int = message_check(m)
     tra_mes = ""
     for i in m:
         for li in tra_list:
             if(i in li):
                 print(li)
-                tra_mes = tra_mes + li[1] + " "
+                tra_mes = tra_mes + li[tra_int] + " "
     print(tra_mes)
