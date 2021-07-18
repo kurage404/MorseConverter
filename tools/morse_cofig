@@ -1,4 +1,5 @@
-from1
-from2
-to1
-to2
+from1 0
+from2 1
+to1 ・
+to2 ー
+opint True
