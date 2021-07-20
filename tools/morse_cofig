@@ -1,5 +1,8 @@
+m あいうえお
+lang jp
 from1 0
 from2 1
 to1 ・
 to2 ー
 opint True
+opcorrect True
