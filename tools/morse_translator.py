@@ -1,5 +1,6 @@
 # code:Python3/UTF-8/LF
 # made by kurage404
+#これはモールス信号翻訳機です。
 import os
 
 def lang_check(lang):
